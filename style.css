@@ -10,6 +10,11 @@ body {
 	height:100%;
 }
 
+
+li {
+	list-style:none;
+}
+
 .container{
 	position:relative;
 }
@@ -129,8 +134,8 @@ header .title-card h1{
 
 .spacer{
 	height:800px;
-	height:100%;
-	margin:0 auto;
+	height:100%
+;	margin:0 auto;
 	overflow: auto;
 }
 
@@ -138,7 +143,6 @@ header .title-card h1{
 ----------------------------------------------*/
 
 .education {
-	height:800px;
 	margin:0 auto;
 	padding: 1em;
 	background-color:#262626;
@@ -151,7 +155,7 @@ header .title-card h1{
 }
 
 .education-flex {
-	height:800px;
+
 	margin:0 auto;
 	display:flex;
 	flex-wrap:wrap;
@@ -176,34 +180,68 @@ header .title-card h1{
 /*Skills
 ----------------------------------------------*/
 
-.experience {
-	padding: 1em;
-	background-color:#383838;
+.skills {
+	margin:0 auto;
+	height:100%;
+	background-color:blue;
+
 }
 
-.software {
-	padding: 1em;
-	background-color:#383838;
+.graph-box {
+	margin: 0 auto;
+	height:100%;
+	background-color:red;
+	display:flex;
+	justify-content:space-around;
 }
+
+.graph-box div {
+	display:flex;
+	flex-direction:column;
+	margin:0 1em;
+}
+
+.graph-box div div{
+	flex-shrink:1;
+	flex: 1;
+	margin:0;
+}
+
+.html-bar {
+	width:100px;
+	height:300px;
+	background-color:green;
+}
+
+.css-bar {
+	width:100px;
+	height:300px;
+	background-color:green;
+}
+
+.javascript-bar {
+	width:100px;
+	height:300px;
+	background-color:green;
+}
+
+.photoshop-bar {
+	width:100px;
+	height:300px;
+	background-color:green;
+}
+
+.illustrator-bar {
+	width:100px;
+	height:300px;
+	background-color:green;
+}
+
+/*Footer
+----------------------------------------------*/
 
 footer 	{
 	float:left;
-}
-
-li {
-	list-style:none;
-}
-
-img {
-	max-width:100%;
-	height:auto;
-}
-
-.video-container{
-	position:fixed;
-	top: 0;
-	left: 0;
-	z-index: 9999;
 }
 
 
