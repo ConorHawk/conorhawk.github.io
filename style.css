@@ -9,8 +9,6 @@ body {
 .container{
 	position:relative;
     top:800px;
-
-
 }
 
 
@@ -53,10 +51,11 @@ body {
 
 header {
 	background-image: url("images/grid.png");
-	height:800px;
+	height:100%;
 	width:100%;
 	position:fixed;
-	display:block;
+	display:flex;
+	align-items:center;
 	
 }
 
@@ -68,7 +67,11 @@ header {
 .title-card {
 	padding:0;
 	margin:0 auto;
+	width:320px;
+	height:345px;
 }
+
+
 
 .no-face {
 	width:185.5px;
@@ -109,13 +112,6 @@ header {
 	padding:0 .5em .5em .5em;
 }
 
-header .title-card {
-	padding:0;
-	width:320px;
-	height:224px;
-	margin:10em auto;
-
-}
 
 header .title-card h1{
 	font-family: 'Inconsolata', sans-serif;
