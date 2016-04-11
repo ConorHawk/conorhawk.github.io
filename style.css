@@ -76,10 +76,7 @@ header {
 	padding:0;
 	margin:0 auto;
 	width:320px;
-	height:px;
 }
-
-
 
 .no-face {
 	width:185.5px;
@@ -132,10 +129,39 @@ header .title-card h1{
 	margin:0 auto;
 }
 
+.scroll-down{
+	padding:1.5em;
+}
+
+.scroll-down p {
+text-align:center;
+margin:.1em;
+}
+
+.scroll-down img {
+	margin:0 auto;
+	display:block;
+	float:center;
+	width:20%;
+	opacity:1;
+}
+
+@-webkit-keyframes fontbulger {
+        0%, 100% {
+                opacity:.1;
+        }
+        50% {
+                opacity:1;
+        }
+}
+.scroll-down {
+     -webkit-animation: fontbulger 2s infinite;
+}
+
 .spacer{
 	height:800px;
-	height:100%
-;	margin:0 auto;
+	height:100%;	
+	margin:0 auto;
 	overflow: auto;
 }
 
@@ -177,65 +203,156 @@ header .title-card h1{
 	font-family: 'Inconsolata', sans-serif;
 }
 
+/*Showreel
+----------------------------------------------*/
+.showreel-box {
+	height:1000px;
+	display:flex;
+	margin:0 auto;
+	justify-content:center;
+	flex-direction:column;
+}
+.showreel-box h3{
+	display:inline;
+	margin:0 auto;
+
+}
+.showreel {
+	height:200px;
+	width:200px;
+	margin:0 auto;
+	background-color:white;
+}
+
+.overlay {
+     position: fixed;
+     left:0;
+     top:0;
+     width:100%;
+     height:100%;
+     z-index: 9999;
+     background: rgba(0,0,0,.5);
+}
+
+.accessibly-hidden {
+	position:absolute;
+	left: -999em;
+}
+
+.overlay div {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin: 0 auto;
+	height:100%;
+     width:90%;
+     margin: 2em auto;
+     background: #000;
+     padding:0;
+}
+
 /*Skills
 ----------------------------------------------*/
 
-.skills {
+.chart-group {
+	height:100%;
+	width:80%;
 	margin:0 auto;
-	height:100%;
-	background-color:blue;
 
 }
 
-.graph-box {
-	margin: 0 auto;
-	height:100%;
-	background-color:red;
-	display:flex;
-	justify-content:space-around;
+.chart {
+	width:100%;
+	padding:0;
+	text-align:center;
 }
 
-.graph-box div {
-	display:flex;
-	flex-direction:column;
-	margin:0 1em;
+.chart li {
+  border-radius: 4px 4px 0 0; 
+  box-shadow: 0 1px 0 0 rgba(255,255,255,.6) inset; 
+  display: block;
+  height: 125px;
+  padding: px 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
 }
 
-.graph-box div div{
-	flex-shrink:1;
-	flex: 1;
-	margin:0;
+.chart span { 
+	font-size: 30px;  
 }
 
-.html-bar {
-	width:100px;
-	height:300px;
-	background-color:green;
+
+.chart .percent {
+  font-size: 30px;
+  letter-spacing: -3px;
+  opacity: .4;
+  width: 100%;
 }
 
-.css-bar {
-	width:100px;
-	height:300px;
-	background-color:green;
+
+
+.chart .bar1 {
+	background:#4ecdc4;
+	background-image: linear-gradient(#76d8d1, #4ecdc4 70%);
+	border: 1px solid #4ecdc4;
 }
 
-.javascript-bar {
-	width:100px;
-	height:300px;
-	background-color:green;
+.chart .bar2 {
+	background:#4ecdc4;
+	background-image: linear-gradient(#76d8d1, #4ecdc4 70%);
+	border: 1px solid #4ecdc4;
+}
+.chart .bar3 {
+	background:#4ecdc4;
+	background-image: linear-gradient(#76d8d1, #4ecdc4 70%);
+	border: 1px solid #4ecdc4;
+}
+.chart .bar4 {
+	background:#4ecdc4;
+	background-image: linear-gradient(#76d8d1, #4ecdc4 70%);
+	border: 1px solid #4ecdc4;
+}
+.chart .bar5 {
+	background:#4ecdc4;
+	background-image: linear-gradient(#76d8d1, #4ecdc4 70%);
+	border: 1px solid #4ecdc4;
 }
 
-.photoshop-bar {
-	width:100px;
-	height:300px;
-	background-color:green;
-}
+@media (min-width: 700px) {
+  .chart {
+   
+    height: 425px;
+    margin: 0 auto -32px;
+  }
+  .chart li {
+    display: inline-block;
+    height: 100%;
+    margin: 0 1.8% 0 1.8%;
+    width: 14%;
+  }
 
-.illustrator-bar {
-	width:100px;
-	height:300px;
-	background-color:green;
-}
+  .chart .percent {
+    font-size: 40px;
+    position: absolute;
+  }
+  .chart .skill {
+    bottom: 20px;
+    font-size: 16px;
+    position: absolute;
+  }
+	}
+
+	.bar1:hover{
+		background:red;
+	}
+
+	@media (min-width: 1000px) {
+	  .chart .percent {
+	    font-size: 62px;
+	  }
+	}
+
 
 /*Footer
 ----------------------------------------------*/
@@ -244,33 +361,6 @@ footer 	{
 	float:left;
 }
 
-
-@media only screen and (min-width: 320px)  {
-
-	.education {
-		margin: 0;
-		box-sizing:border-box;
-		font-family: 'Raleway', sans-serif;
-		padding: 1em;
-
-	}
-
-	.experience {
-		margin: 0;
-		box-sizing:border-box;
-		font-family: 'Raleway', sans-serif;
-		padding: 1em;
-
-	}
-
-	.software {
-		margin: 0;
-		box-sizing:border-box;
-		font-family: 'Raleway', sans-serif;
-		padding: 1em;
-
-	}
-}
 
 
 
